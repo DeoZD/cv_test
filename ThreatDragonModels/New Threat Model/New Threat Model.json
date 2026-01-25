@@ -500,12 +500,12 @@
           },
           {
             "position": {
-              "x": 648,
-              "y": 140
+              "x": 110,
+              "y": 270
             },
             "size": {
-              "width": 112.5,
-              "height": 60
+              "width": 170,
+              "height": 90
             },
             "attrs": {
               "text": {
@@ -613,6 +613,13 @@
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           }
         ]
