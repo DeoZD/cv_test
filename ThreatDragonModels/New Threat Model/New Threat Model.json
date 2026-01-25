@@ -19,8 +19,8 @@
         "cells": [
           {
             "position": {
-              "x": 320,
-              "y": 280
+              "x": 329.99999999999994,
+              "y": 380
             },
             "size": {
               "width": 130,
@@ -139,12 +139,12 @@
           },
           {
             "position": {
-              "x": 730,
-              "y": 280
+              "x": 690,
+              "y": 400
             },
             "size": {
-              "width": 120,
-              "height": 60
+              "width": 200,
+              "height": 90
             },
             "attrs": {
               "text": {
@@ -263,12 +263,12 @@
           },
           {
             "position": {
-              "x": 60,
-              "y": 335
+              "x": -70,
+              "y": 400
             },
             "size": {
-              "width": 112.5,
-              "height": 60
+              "width": 170,
+              "height": 90
             },
             "attrs": {
               "text": {
@@ -380,16 +380,16 @@
           },
           {
             "position": {
-              "x": 625,
-              "y": 60
+              "x": 329.99999999999994,
+              "y": 70.00000000000011
             },
             "size": {
               "width": 130,
-              "height": 120
+              "height": 130
             },
             "attrs": {
               "text": {
-                "text": "LDAP"
+                "text": "Authorization\nProvider"
               },
               "body": {
                 "stroke": "#333333",
@@ -399,7 +399,6 @@
             },
             "visible": true,
             "shape": "process",
-            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -466,26 +465,27 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "80686829-770d-4493-958c-ce7e79b0381e"
+                  "id": "852ef1ae-e913-42e7-a2a7-8ea256dbe3d3"
                 },
                 {
                   "group": "right",
-                  "id": "cd7a86e4-1bd8-48b9-96d8-72a6770ebdc6"
+                  "id": "8f8c465a-30aa-4570-961b-d2dee4d0eb71"
                 },
                 {
                   "group": "bottom",
-                  "id": "717a6297-96af-4bcc-9337-6333eeb20a41"
+                  "id": "163f2127-3695-4575-9a20-0a76b25ce03f"
                 },
                 {
                   "group": "left",
-                  "id": "d49d8050-2174-4890-a522-8d8983ceda29"
+                  "id": "2d6b7246-7ba1-4312-9472-be1af3902e71"
                 }
               ]
             },
-            "id": "a0ce9b1d-6cd4-4985-87f6-a694fcb28226",
+            "id": "7957ab4e-bbd9-4175-9790-4237a774c07c",
+            "zIndex": 4,
             "data": {
               "type": "tm.Process",
-              "name": "LDAP",
+              "name": "Authorization\nProvider",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -500,16 +500,16 @@
           },
           {
             "position": {
-              "x": 305,
-              "y": 90
+              "x": 648,
+              "y": 140
             },
             "size": {
-              "width": 160,
+              "width": 112.5,
               "height": 60
             },
             "attrs": {
               "text": {
-                "text": "Authorization Provider"
+                "text": "LDAP"
               },
               "body": {
                 "stroke": "#333333",
@@ -519,7 +519,6 @@
             },
             "visible": true,
             "shape": "actor",
-            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -586,26 +585,27 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "571322af-3ddd-47ec-91ef-cef8ad23ef6e"
+                  "id": "07e378b1-1f2a-4a6d-95ae-218f2077b526"
                 },
                 {
                   "group": "right",
-                  "id": "d33e5a48-3702-479e-aa60-b131d974eb9c"
+                  "id": "e7c027a9-4dbf-406c-9c46-d49f9b57365f"
                 },
                 {
                   "group": "bottom",
-                  "id": "3f690096-7517-48ce-a856-3e0457274817"
+                  "id": "14af4fd6-5b89-40ce-9c97-ba0ce399c600"
                 },
                 {
                   "group": "left",
-                  "id": "bbc65515-09e0-4d31-bc2e-39341124e549"
+                  "id": "5168925e-6e53-421d-a6c1-47cf0c9d87e3"
                 }
               ]
             },
-            "id": "82815a11-32a6-4f47-8113-7b500fe3a950",
+            "id": "92bf3ab9-c15c-41cb-a8c4-91ebaba26f99",
+            "zIndex": 5,
             "data": {
               "type": "tm.Actor",
-              "name": "Authorization Provider",
+              "name": "LDAP",
               "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,
@@ -614,118 +614,6 @@
               "providesAuthentication": false,
               "threats": []
             }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data to Verify",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Data to Verify"
-            ],
-            "id": "9caab095-b238-4be7-9c2c-37c72ae477a9",
-            "source": {
-              "cell": "82815a11-32a6-4f47-8113-7b500fe3a950",
-              "port": "d33e5a48-3702-479e-aa60-b131d974eb9c"
-            },
-            "target": {
-              "cell": "a0ce9b1d-6cd4-4985-87f6-a694fcb28226",
-              "port": "d49d8050-2174-4890-a522-8d8983ceda29"
-            },
-            "vertices": [
-              {
-                "x": 550,
-                "y": 100
-              },
-              {
-                "x": 570,
-                "y": 100
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Verified Data",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Verified Data"
-            ],
-            "id": "359f4122-751f-48db-8178-cbe7f95a2604",
-            "source": {
-              "cell": "a0ce9b1d-6cd4-4985-87f6-a694fcb28226",
-              "port": "d49d8050-2174-4890-a522-8d8983ceda29"
-            },
-            "target": {
-              "cell": "82815a11-32a6-4f47-8113-7b500fe3a950",
-              "port": "d33e5a48-3702-479e-aa60-b131d974eb9c"
-            },
-            "vertices": [
-              {
-                "x": 580,
-                "y": 140
-              },
-              {
-                "x": 530,
-                "y": 160
-              }
-            ]
           }
         ]
       }
