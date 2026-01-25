@@ -1102,6 +1102,40 @@
                 "y": 240
               }
             ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              ""
+            ],
+            "id": "20567cef-a09d-4738-a243-4b6627d475a1",
+            "source": {
+              "x": 710,
+              "y": 60
+            },
+            "target": {
+              "x": 710,
+              "y": 220
+            },
+            "vertices": [
+              {
+                "x": 660,
+                "y": 140
+              }
+            ]
           }
         ]
       }
