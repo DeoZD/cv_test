@@ -295,14 +295,36 @@
                   "new": false,
                   "number": 2,
                   "score": ""
+                },
+                {
+                  "id": "4870c14b-345b-468a-9d3d-c7d066b44ea6",
+                  "title": "Unverified SQL Database Data Writes",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Repudiation",
+                  "description": "The SQL Database claims that it did not write data received from an entity on the other side of the trust boundary.",
+                  "mitigation": "Consider using logging or auditing to record the source, time and a summary of the received data.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
                 "tampering": 1,
-                "repudiation": 0,
+                "repudiation": 1,
                 "informationDisclosure": 0,
                 "denialOfService": 0
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -591,58 +613,6 @@
               {
                 "x": 170,
                 "y": 350
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Feedback Comments",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Feedback Comments"
-            ],
-            "id": "8a02e152-ffda-4926-8902-81c33b897195",
-            "source": {
-              "cell": "8458f474-fa78-4b82-b954-892985683b22",
-              "port": "d33e5a48-3702-479e-aa60-b131d974eb9c"
-            },
-            "target": {
-              "cell": "4812ec3c-2c79-46b3-a8c9-6336a44bded3",
-              "port": "d49d8050-2174-4890-a522-8d8983ceda29"
-            },
-            "vertices": [
-              {
-                "x": 210,
-                "y": 480
               }
             ]
           },
@@ -1203,6 +1173,78 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Feedback Comments",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "1be4ca68-9d69-4394-9f14-f3ad50aaa835",
+                  "title": "Feedback Data Tampering",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Data flowing across saved feedback comments may be tampered with by an attacker. Failure to verify that input is as expected is a root cause of a very large number of exploitable issues.",
+                  "mitigation": "Consider all paths and the way they handle data. Verify that all input is verified for correctness using an approved-list input validation approach.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Feedback Comments"
+            ],
+            "id": "8a02e152-ffda-4926-8902-81c33b897195",
+            "source": {
+              "cell": "8458f474-fa78-4b82-b954-892985683b22",
+              "port": "d33e5a48-3702-479e-aa60-b131d974eb9c"
+            },
+            "target": {
+              "cell": "4812ec3c-2c79-46b3-a8c9-6336a44bded3",
+              "port": "d49d8050-2174-4890-a522-8d8983ceda29"
+            },
+            "vertices": [
+              {
+                "x": 210,
+                "y": 480
+              }
+            ]
+          },
+          {
             "position": {
               "x": 760,
               "y": 90.00000000000011
@@ -1358,6 +1400,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 3
+    "threatTop": 5
   }
 }
